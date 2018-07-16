@@ -34,30 +34,26 @@ contract Kommisar {
         return votes;
     }
 
-    function kill() public {
-        isDead = true;
+    function kill(address addr, uint typeContr){
+      if (typeContr == 0){
+         Citizen(addr).isDead = true;
+      }
+      else if (typeContr == 1){
+         Doctor(addr).isDead = true;
+      }
+      else if (typeContr == 2){
+        Kommisar(addr).isDead = true;
+      }
+      else if (typeContr == 3){
+         Mafia(addr).isDead = true;
+      }
+      else if (typeContr == 4){
+         Maniac(addr).isDead = true;
+      }
     }
 
-    function killGuilty(address addr, uint typeContr) public {
-
-        if (typeContr == 0){
-            Citizen(addr).kill();
-        }
-        else if (typeContr == 1){
-            Doctor(addr).kill();//remake
-        }
-        else if (typeContr == 2){
-            DonMafia(addr).kill();//remake
-        }
-        else if (typeContr == 3){
-            Kommisar(addr).kill();
-        }
-        else if (typeContr == 4){
-            Mafia(addr).kill();//remake
-        }
-        else if (typeContr == 5){
-            Maniac(addr).kill();//remake
-        }
+    function check(address addr, uint typeContr) returns (uint) {
+      return typeContr;
     }
 
     function vote(address addr, uint typeContr) public {
