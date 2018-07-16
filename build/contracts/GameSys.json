@@ -36,24 +36,24 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b50610185806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063b1275f9a14610051578063f8b1316114610094575b600080fd5b34801561005d57600080fd5b50610092600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100eb565b005b3480156100a057600080fd5b506100a9610154565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b6000905600a165627a7a72305820b69d832c44f9367a05824442f049f7f85b44df4450564216b0a14a55e9fd83690029",
-  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063b1275f9a14610051578063f8b1316114610094575b600080fd5b34801561005d57600080fd5b50610092600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100eb565b005b3480156100a057600080fd5b506100a9610154565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b6000905600a165627a7a72305820b69d832c44f9367a05824442f049f7f85b44df4450564216b0a14a55e9fd83690029",
-  "sourceMap": "144:210:3:-;;;191:29;8:9:-1;5:2;;;30:1;27;20:12;5:2;191:29:3;144:210;;;;;;",
-  "deployedSourceMap": "144:210:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;281:70;;8:9:-1;5:2;;;30:1;27;20:12;5:2;281:70:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;226:49;;8:9:-1;5:2;;;30:1;27;20:12;5:2;226:49:3;;;;;;;;;;;;;;;;;;;;;;;;;;;281:70;324:7;337:6;324:20;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;324:20:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;281:70;:::o;226:49::-;258:7;226:49;:::o",
-  "source": "pragma solidity ^0.4.22;\n\nimport \"./citizen.sol\";\nimport \"./doctor.sol\";\nimport \"./kommisar.sol\";\nimport \"./mafia.sol\";\nimport \"./maniac.sol\";\n\ncontract GameSys {\n    address[] players;\n\n    constructor() public {\n\n    }\n\n    function getMaxVotes() returns (address) {\n\n    }\n\n    function addPlayer(address player) {\n      players.push(player);\n    }\n\n}\n",
+  "bytecode": "0x608060405234801561001057600080fd5b50610185806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063b1275f9a14610051578063f8b1316114610094575b600080fd5b34801561005d57600080fd5b50610092600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100eb565b005b3480156100a057600080fd5b506100a9610154565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b6000905600a165627a7a7230582026df64f734227f6b6626ca0ac6960f9100bd8c6bbb42e94d5f20dd3a78056ee10029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063b1275f9a14610051578063f8b1316114610094575b600080fd5b34801561005d57600080fd5b50610092600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100eb565b005b3480156100a057600080fd5b506100a9610154565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b6000905600a165627a7a7230582026df64f734227f6b6626ca0ac6960f9100bd8c6bbb42e94d5f20dd3a78056ee10029",
+  "sourceMap": "144:321:2:-;;;215:29;8:9:-1;5:2;;;30:1;27;20:12;5:2;215:29:2;144:321;;;;;;",
+  "deployedSourceMap": "144:321:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;392:70;;8:9:-1;5:2;;;30:1;27;20:12;5:2;392:70:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;250:49;;8:9:-1;5:2;;;30:1;27;20:12;5:2;250:49:2;;;;;;;;;;;;;;;;;;;;;;;;;;;392:70;435:7;448:6;435:20;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;435:20:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;392:70;:::o;250:49::-;282:7;250:49;:::o",
+  "source": "pragma solidity ^0.4.22;\n\nimport \"./citizen.sol\";\nimport \"./doctor.sol\";\nimport \"./kommisar.sol\";\nimport \"./mafia.sol\";\nimport \"./maniac.sol\";\n\ncontract GameSys {\n    address[] players;\n    // address[] games;\n\n    constructor() public {\n\n    }\n\n    function getMaxVotes() returns (address) {\n\n    }\n\n    /* function startGame() {\n\n    }\n\n    function joinGame(address game) {\n\n    } */\n\n    function addPlayer(address player) {\n      players.push(player);\n    }\n\n}\n",
   "sourcePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/gamesys.sol",
   "ast": {
     "absolutePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/gamesys.sol",
     "exportedSymbols": {
       "GameSys": [
-        438
+        381
       ]
     },
-    "id": 439,
+    "id": 382,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 407,
+        "id": 350,
         "literals": [
           "solidity",
           "^",
@@ -61,60 +61,60 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:3"
+        "src": "0:24:2"
       },
       {
         "absolutePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/citizen.sol",
         "file": "./citizen.sol",
-        "id": 408,
+        "id": 351,
         "nodeType": "ImportDirective",
-        "scope": 439,
-        "sourceUnit": 200,
-        "src": "26:23:3",
+        "scope": 382,
+        "sourceUnit": 143,
+        "src": "26:23:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/doctor.sol",
         "file": "./doctor.sol",
-        "id": 409,
+        "id": 352,
         "nodeType": "ImportDirective",
-        "scope": 439,
-        "sourceUnit": 406,
-        "src": "50:22:3",
+        "scope": 382,
+        "sourceUnit": 349,
+        "src": "50:22:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/kommisar.sol",
         "file": "./kommisar.sol",
-        "id": 410,
+        "id": 353,
         "nodeType": "ImportDirective",
-        "scope": 439,
-        "sourceUnit": 664,
-        "src": "73:24:3",
+        "scope": 382,
+        "sourceUnit": 607,
+        "src": "73:24:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/mafia.sol",
         "file": "./mafia.sol",
-        "id": 411,
+        "id": 354,
         "nodeType": "ImportDirective",
-        "scope": 439,
-        "sourceUnit": 870,
-        "src": "98:21:3",
+        "scope": 382,
+        "sourceUnit": 813,
+        "src": "98:21:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/maniac.sol",
         "file": "./maniac.sol",
-        "id": 412,
+        "id": 355,
         "nodeType": "ImportDirective",
-        "scope": 439,
-        "sourceUnit": 1076,
-        "src": "120:22:3",
+        "scope": 382,
+        "sourceUnit": 1019,
+        "src": "120:22:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -124,20 +124,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 438,
+        "id": 381,
         "linearizedBaseContracts": [
-          438
+          381
         ],
         "name": "GameSys",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 415,
+            "id": 358,
             "name": "players",
             "nodeType": "VariableDeclaration",
-            "scope": 438,
-            "src": "167:17:3",
+            "scope": 381,
+            "src": "167:17:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -146,19 +146,19 @@
             },
             "typeName": {
               "baseType": {
-                "id": 413,
+                "id": 356,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "167:7:3",
+                "src": "167:7:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
-              "id": 414,
+              "id": 357,
               "length": null,
               "nodeType": "ArrayTypeName",
-              "src": "167:9:3",
+              "src": "167:9:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                 "typeString": "address[]"
@@ -169,13 +169,13 @@
           },
           {
             "body": {
-              "id": 418,
+              "id": 361,
               "nodeType": "Block",
-              "src": "212:8:3",
+              "src": "236:8:2",
               "statements": []
             },
             "documentation": null,
-            "id": 419,
+            "id": 362,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -183,33 +183,33 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 416,
+              "id": 359,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "202:2:3"
+              "src": "226:2:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 417,
+              "id": 360,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "212:0:3"
+              "src": "236:0:2"
             },
-            "scope": 438,
-            "src": "191:29:3",
+            "scope": 381,
+            "src": "215:29:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 424,
+              "id": 367,
               "nodeType": "Block",
-              "src": "267:8:3",
+              "src": "291:8:2",
               "statements": []
             },
             "documentation": null,
-            "id": 425,
+            "id": 368,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -217,23 +217,23 @@
             "name": "getMaxVotes",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 420,
+              "id": 363,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "246:2:3"
+              "src": "270:2:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 423,
+              "id": 366,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 422,
+                  "id": 365,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 425,
-                  "src": "258:7:3",
+                  "scope": 368,
+                  "src": "282:7:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -241,10 +241,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 421,
+                    "id": 364,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "258:7:3",
+                    "src": "282:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -254,19 +254,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "257:9:3"
+              "src": "281:9:2"
             },
-            "scope": 438,
-            "src": "226:49:3",
+            "scope": 381,
+            "src": "250:49:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 436,
+              "id": 379,
               "nodeType": "Block",
-              "src": "316:35:3",
+              "src": "427:35:2",
               "statements": [
                 {
                   "expression": {
@@ -274,12 +274,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 433,
+                        "id": 376,
                         "name": "player",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 427,
-                        "src": "337:6:3",
+                        "referencedDeclaration": 370,
+                        "src": "448:6:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -295,18 +295,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 430,
+                        "id": 373,
                         "name": "players",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 415,
-                        "src": "324:7:3",
+                        "referencedDeclaration": 358,
+                        "src": "435:7:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_storage",
                           "typeString": "address[] storage ref"
                         }
                       },
-                      "id": 432,
+                      "id": 375,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -314,13 +314,13 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "324:12:3",
+                      "src": "435:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_address_$returns$_t_uint256_$",
                         "typeString": "function (address) returns (uint256)"
                       }
                     },
-                    "id": 434,
+                    "id": 377,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -328,20 +328,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "324:20:3",
+                    "src": "435:20:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 435,
+                  "id": 378,
                   "nodeType": "ExpressionStatement",
-                  "src": "324:20:3"
+                  "src": "435:20:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 437,
+            "id": 380,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -349,16 +349,16 @@
             "name": "addPlayer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 428,
+              "id": 371,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 427,
+                  "id": 370,
                   "name": "player",
                   "nodeType": "VariableDeclaration",
-                  "scope": 437,
-                  "src": "300:14:3",
+                  "scope": 380,
+                  "src": "411:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -366,10 +366,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 426,
+                    "id": 369,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "300:7:3",
+                    "src": "411:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -379,40 +379,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "299:16:3"
+              "src": "410:16:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 429,
+              "id": 372,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "316:0:3"
+              "src": "427:0:2"
             },
-            "scope": 438,
-            "src": "281:70:3",
+            "scope": 381,
+            "src": "392:70:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 439,
-        "src": "144:210:3"
+        "scope": 382,
+        "src": "144:321:2"
       }
     ],
-    "src": "0:355:3"
+    "src": "0:466:2"
   },
   "legacyAST": {
     "absolutePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/gamesys.sol",
     "exportedSymbols": {
       "GameSys": [
-        438
+        381
       ]
     },
-    "id": 439,
+    "id": 382,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 407,
+        "id": 350,
         "literals": [
           "solidity",
           "^",
@@ -420,60 +420,60 @@
           ".22"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:3"
+        "src": "0:24:2"
       },
       {
         "absolutePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/citizen.sol",
         "file": "./citizen.sol",
-        "id": 408,
+        "id": 351,
         "nodeType": "ImportDirective",
-        "scope": 439,
-        "sourceUnit": 200,
-        "src": "26:23:3",
+        "scope": 382,
+        "sourceUnit": 143,
+        "src": "26:23:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/doctor.sol",
         "file": "./doctor.sol",
-        "id": 409,
+        "id": 352,
         "nodeType": "ImportDirective",
-        "scope": 439,
-        "sourceUnit": 406,
-        "src": "50:22:3",
+        "scope": 382,
+        "sourceUnit": 349,
+        "src": "50:22:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/kommisar.sol",
         "file": "./kommisar.sol",
-        "id": 410,
+        "id": 353,
         "nodeType": "ImportDirective",
-        "scope": 439,
-        "sourceUnit": 664,
-        "src": "73:24:3",
+        "scope": 382,
+        "sourceUnit": 607,
+        "src": "73:24:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/mafia.sol",
         "file": "./mafia.sol",
-        "id": 411,
+        "id": 354,
         "nodeType": "ImportDirective",
-        "scope": 439,
-        "sourceUnit": 870,
-        "src": "98:21:3",
+        "scope": 382,
+        "sourceUnit": 813,
+        "src": "98:21:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/nikitazaytsev/Projects/blockchain_mafia/contracts/maniac.sol",
         "file": "./maniac.sol",
-        "id": 412,
+        "id": 355,
         "nodeType": "ImportDirective",
-        "scope": 439,
-        "sourceUnit": 1076,
-        "src": "120:22:3",
+        "scope": 382,
+        "sourceUnit": 1019,
+        "src": "120:22:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -483,20 +483,20 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 438,
+        "id": 381,
         "linearizedBaseContracts": [
-          438
+          381
         ],
         "name": "GameSys",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 415,
+            "id": 358,
             "name": "players",
             "nodeType": "VariableDeclaration",
-            "scope": 438,
-            "src": "167:17:3",
+            "scope": 381,
+            "src": "167:17:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -505,19 +505,19 @@
             },
             "typeName": {
               "baseType": {
-                "id": 413,
+                "id": 356,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "167:7:3",
+                "src": "167:7:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
-              "id": 414,
+              "id": 357,
               "length": null,
               "nodeType": "ArrayTypeName",
-              "src": "167:9:3",
+              "src": "167:9:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                 "typeString": "address[]"
@@ -528,13 +528,13 @@
           },
           {
             "body": {
-              "id": 418,
+              "id": 361,
               "nodeType": "Block",
-              "src": "212:8:3",
+              "src": "236:8:2",
               "statements": []
             },
             "documentation": null,
-            "id": 419,
+            "id": 362,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -542,33 +542,33 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 416,
+              "id": 359,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "202:2:3"
+              "src": "226:2:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 417,
+              "id": 360,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "212:0:3"
+              "src": "236:0:2"
             },
-            "scope": 438,
-            "src": "191:29:3",
+            "scope": 381,
+            "src": "215:29:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 424,
+              "id": 367,
               "nodeType": "Block",
-              "src": "267:8:3",
+              "src": "291:8:2",
               "statements": []
             },
             "documentation": null,
-            "id": 425,
+            "id": 368,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -576,23 +576,23 @@
             "name": "getMaxVotes",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 420,
+              "id": 363,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "246:2:3"
+              "src": "270:2:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 423,
+              "id": 366,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 422,
+                  "id": 365,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 425,
-                  "src": "258:7:3",
+                  "scope": 368,
+                  "src": "282:7:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -600,10 +600,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 421,
+                    "id": 364,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "258:7:3",
+                    "src": "282:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -613,19 +613,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "257:9:3"
+              "src": "281:9:2"
             },
-            "scope": 438,
-            "src": "226:49:3",
+            "scope": 381,
+            "src": "250:49:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 436,
+              "id": 379,
               "nodeType": "Block",
-              "src": "316:35:3",
+              "src": "427:35:2",
               "statements": [
                 {
                   "expression": {
@@ -633,12 +633,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 433,
+                        "id": 376,
                         "name": "player",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 427,
-                        "src": "337:6:3",
+                        "referencedDeclaration": 370,
+                        "src": "448:6:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -654,18 +654,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 430,
+                        "id": 373,
                         "name": "players",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 415,
-                        "src": "324:7:3",
+                        "referencedDeclaration": 358,
+                        "src": "435:7:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_storage",
                           "typeString": "address[] storage ref"
                         }
                       },
-                      "id": 432,
+                      "id": 375,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -673,13 +673,13 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "324:12:3",
+                      "src": "435:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_address_$returns$_t_uint256_$",
                         "typeString": "function (address) returns (uint256)"
                       }
                     },
-                    "id": 434,
+                    "id": 377,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -687,20 +687,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "324:20:3",
+                    "src": "435:20:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 435,
+                  "id": 378,
                   "nodeType": "ExpressionStatement",
-                  "src": "324:20:3"
+                  "src": "435:20:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 437,
+            "id": 380,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -708,16 +708,16 @@
             "name": "addPlayer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 428,
+              "id": 371,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 427,
+                  "id": 370,
                   "name": "player",
                   "nodeType": "VariableDeclaration",
-                  "scope": 437,
-                  "src": "300:14:3",
+                  "scope": 380,
+                  "src": "411:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -725,10 +725,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 426,
+                    "id": 369,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "300:7:3",
+                    "src": "411:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -738,27 +738,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "299:16:3"
+              "src": "410:16:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 429,
+              "id": 372,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "316:0:3"
+              "src": "427:0:2"
             },
-            "scope": 438,
-            "src": "281:70:3",
+            "scope": 381,
+            "src": "392:70:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 439,
-        "src": "144:210:3"
+        "scope": 382,
+        "src": "144:321:2"
       }
     ],
-    "src": "0:355:3"
+    "src": "0:466:2"
   },
   "compiler": {
     "name": "solc",
@@ -773,5 +773,5 @@
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-07-16T10:18:02.785Z"
+  "updatedAt": "2018-07-16T13:33:01.341Z"
 }

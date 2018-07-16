@@ -8,7 +8,7 @@ import "./maniac.sol";
 contract Doctor {
   bool public isDead;
   uint public votes;
-  bool private isSleeping;
+  bool public isSleeping;
 
   uint public constant typeContract = 1; // citizen = 0, doctor = 1, kommisar = 2, mafia = 3, maniac = 4;
 
@@ -36,7 +36,7 @@ contract Doctor {
     isSleeping = false;
   }
 
-  function getVotes() returns (uint) {
+  function getVotes() public view returns (uint) {
     return votes;
   }
 
