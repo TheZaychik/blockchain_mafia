@@ -4,10 +4,11 @@ import "./citizen.sol";
 import "./doctor.sol";
 import "./kommisar.sol";
 import "./mafia.sol";
-import "./mainac.sol";
+import "./maniac.sol";
 
 contract GameSys {
     address[] players;
+    // address[] games;
 
     constructor() public {
 
@@ -16,6 +17,14 @@ contract GameSys {
     function getMaxVotes() returns (address) {
 
     }
+
+    /* function startGame() {
+
+    }
+
+    function joinGame(address game) {
+
+    } */
 
     function addPlayer(address player) {
       players.push(player);
