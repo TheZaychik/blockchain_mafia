@@ -1,11 +1,9 @@
 pragma solidity ^0.4.22;
 
-import "./citizen.sol";
 import "./doctor.sol";
-import "./donmafia.sol";
 import "./kommisar.sol";
 import "./mafia.sol";
-import "./mabiac.sol";
+import "./maniac.sol";
 
 contract Citizen {
   bool public isDead;
@@ -17,6 +15,12 @@ contract Citizen {
     isDead = false;
     isSleeping = false;
     votes = 0;
+  }
+  function die() {
+    isDead = true;
+  }
+  function heal() {
+    isDead = false;
   }
 
   function addVote() {

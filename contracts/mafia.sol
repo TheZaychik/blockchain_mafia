@@ -1,5 +1,10 @@
 pragma solidity ^0.4.22;
 
+import "./citizen.sol";
+import "./doctor.sol";
+import "./kommisar.sol";
+import "./maniac.sol";
+
 contract Mafia {
   bool public isDead;
   uint public votes;
@@ -14,6 +19,12 @@ contract Mafia {
   }
   function addVote() {
     votes += 1;
+  }
+  function die() {
+    isDead = true;
+  }
+  function heal() {
+    isDead = false;
   }
 
   function sleep() {
@@ -30,19 +41,19 @@ contract Mafia {
 
   function kill(address addr, uint typeContr){
     if (typeContr == 0){
-       Citizen(addr).isDead = true;
+       Citizen(addr).die();
     }
     else if (typeContr == 1){
-       Doctor(addr).isDead = true;
+       Doctor(addr).die();
     }
     else if (typeContr == 2){
-      Kommisar(addr).isDead = true;
+      Kommisar(addr).die();
     }
     else if (typeContr == 3){
-       Mafia(addr).isDead = true;
+       Mafia(addr).die();
     }
     else if (typeContr == 4){
-       Maniac(addr).isDead = true;
+       Maniac(addr).die();
     }
   }
 

@@ -2,10 +2,9 @@ pragma solidity ^0.4.22;
 
 import "./citizen.sol";
 import "./doctor.sol";
-import "./donmafia.sol";
 import "./kommisar.sol";
 import "./mafia.sol";
-import "./mabiac.sol";
+import "./mainac.sol";
 
 contract GameSys {
     address[] players;

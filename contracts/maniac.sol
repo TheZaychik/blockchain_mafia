@@ -10,7 +10,7 @@ contract Maniac {
   uint public votes;
   bool private isSleeping;
 
-  uint public constant typeContract = 0; // citizen = 0, doctor = 1, kommisar = 2, mafia = 3, maniac = 4;
+  uint public constant typeContract = 4; // citizen = 0, doctor = 1, kommisar = 2, mafia = 3, maniac = 4;
   constructor() public {
     isDead = false;
     isSleeping = false;
@@ -35,19 +35,19 @@ contract Maniac {
 
   function kill(address addr, uint typeContr){
     if (typeContr == 0){
-       Citizen(addr).isDead = true;
+       Citizen(addr).die();
     }
     else if (typeContr == 1){
-       Doctor(addr).isDead = true;
+       Doctor(addr).die();
     }
     else if (typeContr == 2){
-      Kommisar(addr).isDead = true;
+      Kommisar(addr).die();
     }
     else if (typeContr == 3){
-       Mafia(addr).isDead = true;
+       Mafia(addr).die();
     }
     else if (typeContr == 4){
-       Maniac(addr).isDead = true;
+       Maniac(addr).die();
     }
   }
 
@@ -61,7 +61,6 @@ contract Maniac {
 
     else if (typeContr == 2){
        Kommisar(addr).addVote();
-
     }
     else if (typeContr == 3){
        Mafia(addr).addVote();//remake
