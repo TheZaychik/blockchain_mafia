@@ -2,6 +2,7 @@ pragma solidity ^0.4.22;
 
 import "./citizen.sol";
 import "./doctor.sol";
+import "./donmafia.sol";
 import "./mafia.sol";
 import "./mainac.sol";
 
@@ -46,12 +47,15 @@ contract Kommisar {
             Doctor(addr).kill();//remake
         }
         else if (typeContr == 2){
-            Kommisar(addr).kill();
+            DonMafia(addr).kill();//remake
         }
         else if (typeContr == 3){
-            Mafia(addr).kill();//remake
+            Kommisar(addr).kill();
         }
         else if (typeContr == 4){
+            Mafia(addr).kill();//remake
+        }
+        else if (typeContr == 5){
             Maniac(addr).kill();//remake
         }
     }
@@ -64,12 +68,15 @@ contract Kommisar {
             Doctor(addr).addVote();//remake
         }
         else if (typeContr == 2){
-            Kommisar(addr).addVote();
+            DonMafia(addr).addVote();//remake
         }
         else if (typeContr == 3){
-            Mafia(addr).addVote();//remake
+            Kommisar(addr).addVote();
         }
         else if (typeContr == 4){
+            Mafia(addr).addVote();//remake
+        }
+        else if (typeContr == 5){
             Maniac(addr).addVote();//remake
         }
     }
