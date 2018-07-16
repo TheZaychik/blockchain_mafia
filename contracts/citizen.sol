@@ -12,7 +12,7 @@ contract Citizen {
   uint public votes;
   bool private isSleeping;
 
-  uint public constant typeContract = 0; // citizen = 0, doctor = 1, donmafia = 2, kommisar = 3, mafia = 4, mania
+  uint public constant typeContract = 0; // citizen = 0, doctor = 1, kommisar = 2, mafia = 3, maniac = 4;
   constructor() {
     isDead = false;
     isSleeping = false;
@@ -42,18 +42,15 @@ contract Citizen {
     else if (typeContr == 1){
        Doctor(addr).addVote();//remake
     }
-    else if (typeContr == 2){
-       DonMafia(addr).addVote();//remake
 
-    }
-    else if (typeContr == 3){
+    else if (typeContr == 2){
        Kommisar(addr).addVote();
 
     }
-    else if (typeContr == 4){
+    else if (typeContr == 3){
        Mafia(addr).addVote();//remake
     }
-    else if (typeContr == 5){
+    else if (typeContr == 4){
        Maniac(addr).addVote();//remake
     }
 
