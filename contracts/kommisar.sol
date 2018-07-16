@@ -2,7 +2,6 @@ pragma solidity ^0.4.22;
 
 import "./citizen.sol";
 import "./doctor.sol";
-import "./donmafia.sol";
 import "./mafia.sol";
 import "./mainac.sol";
 
@@ -34,26 +33,26 @@ contract Kommisar {
         return votes;
     }
 
-    function kill(address addr, uint typeContr){
-      if (typeContr == 0){
-         Citizen(addr).isDead = true;
-      }
-      else if (typeContr == 1){
-         Doctor(addr).isDead = true;
-      }
-      else if (typeContr == 2){
-        Kommisar(addr).isDead = true;
-      }
-      else if (typeContr == 3){
-         Mafia(addr).isDead = true;
-      }
-      else if (typeContr == 4){
-         Maniac(addr).isDead = true;
-      }
+    function kill(address addr, uint typeContr)public {
+        if (typeContr == 0){
+            Citizen(addr).isDead = true;
+        }
+        else if (typeContr == 1){
+            Doctor(addr).isDead = true;
+        }
+        else if (typeContr == 2){
+            Kommisar(addr).isDead = true;
+        }
+        else if (typeContr == 3){
+            Mafia(addr).isDead = true;
+        }
+        else if (typeContr == 4){
+            Maniac(addr).isDead = true;
+        }
     }
 
-    function check(address addr, uint typeContr) returns (uint) {
-      return typeContr;
+    function check(address addr, uint typeContr) public returns (uint) {
+        return typeContract;
     }
 
     function vote(address addr, uint typeContr) public {
