@@ -5,7 +5,7 @@ import "./doctor.sol";
 import "./donmafia.sol";
 import "./kommisar.sol";
 import "./mafia.sol";
-import "./mabiac.sol";
+import "./mainac.sol";
 
 contract Citizen {
   bool public isDead;
@@ -37,22 +37,22 @@ contract Citizen {
 
   function vote(address addr, uint typeContr) {
     if (typeContr == 0){
-      Citizen(addr).addVote();
+        Citizen(addr).addVote();
     }
     else if (typeContr == 1){
-
+        Doctor(addr).addVote();//remake
     }
     else if (typeContr == 2){
-
+        DonMafia(addr).addVote();//remake
     }
     else if (typeContr == 3){
-
+        Kommisar(addr).addVote();
     }
     else if (typeContr == 4){
-
+        Mafia(addr).addVote();//remake
     }
     else if (typeContr == 5){
-
+        Maniac(addr).addVote();//remake
     }
   }
 
