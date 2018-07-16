@@ -33,22 +33,22 @@ contract Citizen {
   }
 
   function vote(address addr, uint typeContr) {
-    if (typeContr = 0){
+    if (typeContr == 0){
 
     }
-    else if (typeContr = 1){
+    else if (typeContr == 1){
 
     }
-    else if (typeContr = 2){
+    else if (typeContr == 2){
 
     }
-    else if (typeContr = 3){
+    else if (typeContr == 3){
 
     }
-    else if (typeContr = 4){
+    else if (typeContr == 4){
 
     }
-    else if (typeContr = 5){
+    else if (typeContr == 5){
 
     }
   }
