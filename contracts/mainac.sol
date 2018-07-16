@@ -1,3 +1,4 @@
+pragma solidity ^0.4.22;
 
 import "./citizen.sol";
 import "./doctor.sol";
@@ -9,19 +10,11 @@ contract Maniac {
   uint public votes;
   bool private isSleeping;
 
-  uint public constant typeContract = 4; // citizen = 0, doctor = 1, kommisar = 2, mafia = 3, maniac = 4;
+  uint public constant typeContract = 0; // citizen = 0, doctor = 1, kommisar = 2, mafia = 3, maniac = 4;
   constructor() public {
     isDead = false;
     isSleeping = false;
     votes = 0;
-  }
-
-  function die() {
-    isDead = true;
-  }
-
-  function heal() {
-    isDead = false;
   }
 
   function addVote() {
@@ -42,19 +35,19 @@ contract Maniac {
 
   function kill(address addr, uint typeContr){
     if (typeContr == 0){
-       Citizen(addr).die();
+       Citizen(addr).isDead = true;
     }
     else if (typeContr == 1){
-       Doctor(addr).die();
+       Doctor(addr).isDead = true;
     }
     else if (typeContr == 2){
-      Kommisar(addr).die();
+      Kommisar(addr).isDead = true;
     }
     else if (typeContr == 3){
-       Mafia(addr).die();
+       Mafia(addr).isDead = true;
     }
     else if (typeContr == 4){
-       Maniac(addr).die();
+       Maniac(addr).isDead = true;
     }
   }
 
@@ -68,6 +61,7 @@ contract Maniac {
 
     else if (typeContr == 2){
        Kommisar(addr).addVote();
+
     }
     else if (typeContr == 3){
        Mafia(addr).addVote();//remake
