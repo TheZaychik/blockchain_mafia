@@ -17,6 +17,14 @@ contract Maniac {
     votes = 0;
   }
 
+  function die() {
+    isDead = true;
+  }
+
+  function heal() {
+    isDead = false;
+  }
+
   function addVote() {
     votes += 1;
   }

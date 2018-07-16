@@ -4,7 +4,7 @@ import "./citizen.sol";
 import "./doctor.sol";
 import "./kommisar.sol";
 import "./mafia.sol";
-import "./mainac.sol";
+import "./maniac.sol";
 
 contract GameSys {
     address[] players;
