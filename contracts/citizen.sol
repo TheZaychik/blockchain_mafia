@@ -13,7 +13,7 @@ contract Citizen {
   bool private isSleeping;
 
   uint public constant typeContract = 0; // citizen = 0, doctor = 1, kommisar = 2, mafia = 3, maniac = 4;
-  constructor() {
+  constructor() public {
     isDead = false;
     isSleeping = false;
     votes = 0;

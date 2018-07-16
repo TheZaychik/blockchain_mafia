@@ -7,7 +7,7 @@ contract Mafia {
 
   uint public constant typeContract = 3; // citizen = 0, doctor = 1, kommisar = 2, mafia = 3, maniac = 4;
 
-  constructor() {
+  constructor() public {
     isDead = false;
     isSleeping = false;
     votes = 0;

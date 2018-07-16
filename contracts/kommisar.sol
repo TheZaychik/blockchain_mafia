@@ -11,7 +11,7 @@ contract Kommisar {
     bool private isSleeping;
     uint public constant typeContract = 3; // citizen = 0, doctor = 1, donmafia = 2, kommisar = 3, mafia = 4, maniac = 5
 
-    constructor() {
+    constructor() public {
         isDead = false;
         isSleeping = false;
         votes = 0;
@@ -51,8 +51,11 @@ contract Kommisar {
         }
     }
 
-    function check(address addr, uint typeContr) public returns (uint) {
-        return typeContract;
+    function check(address addr, uint typeContr) returns (uint) {
+      if (typeContr == 5){
+        return 0;
+      }
+      return typeContr;
     }
 
     function vote(address addr, uint typeContr) public {
