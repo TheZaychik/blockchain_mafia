@@ -8,9 +8,9 @@ import "./mafia.sol";
 import "./mabiac.sol";
 
 contract Citizen {
-  bool private isDead;
-  uint private votes;
-  bool private isSleeping;
+  bool public isDead;
+  uint public votes;
+  bool public isSleeping;
 
   uint public constant typeContract = 0; // citizen = 0, doctor = 1, donmafia = 2, kommisar = 3, mafia = 4, mania
   constructor() {
@@ -35,16 +35,12 @@ contract Citizen {
     return votes;
   }
 
-  function kill() {
-    isDead = true;
-  }
-
   function vote(address addr, uint typeContr) {
     if (typeContr == 0){
       Citizen(addr).addVote();
     }
     else if (typeContr == 1){
-      
+
     }
     else if (typeContr == 2){
 
