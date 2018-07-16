@@ -44,7 +44,7 @@ contract Citizen {
       Citizen(addr).addVote();
     }
     else if (typeContr == 1){
-        
+      
     }
     else if (typeContr == 2){
 
