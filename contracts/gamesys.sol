@@ -28,6 +28,8 @@ contract GameSys {
    constructor() public {
 
    }
+
+
    function initGame() {
        citizen1.sleep();
        citizen2.sleep();
