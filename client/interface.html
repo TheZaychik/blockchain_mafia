@@ -17,67 +17,39 @@
         <form>
             <p text-align="left">Время суток:</p>
             <p text-align="left">Ход: </p>
-            <p text-align="left">Играет : </p>
+            <p text-align="left">Действует: </p>
             <h3>Игроки:</h3>
             <div>
                <br>
                 <h4>Игрок 1: </h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока(1-10)" value="">
-                <br>
-                <br>
+                    <p>Статус: </p>
                 <br>
                 <h4>Игрок 2:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока(1-10)" value="">
-                <br>
-                <br>
+                    <p>Статус: </p>
                 <br>
                 <h4>Игрок 3:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока(1-10)" value="">
-                <br>
-                <br>
+                    <p>Статус: </p>
                 <br>
                 <h4>Игрок 4:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока(1-10)" value="">
-                <br>
-                <br>
+                    <p>Статус: </p>
                 <br>
                 <h4>Игрок 5:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока(1-10)" value="">
-                <br>
-                <br>
+                    <p>Статус: </p>
                 <br>
                 <h4>Игрок 6:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока(1-10)" value="">
-                <br>
-                <br>
+                    <p>Статус: </p>
                 <br>
                 <h4>Игрок 7:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока(1-10)" value="">
-                <br>
-                <br>
+                    <p>Статус: </p>
                 <br>
                 <h4>Игрок 8:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока(1-10)" value="">
-                <br>
-                <br>
+                    <p>Статус: </p>
                 <br>
                 <h4>Игрок 9:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока(1-10)" value="">
-                <br>
-                <br>
+                    <p>Статус: </p>
                 <br>
                 <h4>Игрок 10:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока(1-10)" value="">
+                    <p>Статус: </p>
                 <br>
                 <button onclick="nextTurn()">Ход</button>
             </div>
@@ -85,16 +57,16 @@
             <div>
                 <p>Проголосовать за: <p>
                 <input placodeholder="Адрес игрока" value="">
-                <button onclick="">Проголосовать!</button>
+                <button id="vote1" onclick="">Проголосовать!</button>
             </div>
             <div>
                 <p><i>[доступно только для врачей]</i> Вылечить: <p>
-                <input placodeholder="Адрес игрока" value="">
+                <input id="vote2"placodeholder="Адрес игрока" value="">
                 <button onclick="">Вылечить!</button>
             </div>
             <div>
                 <p><i>[доступно только для комисара, мафии и маньяка]</i> Убить: <p>
-                <input placodeholder="Адрес игрока" value="">
+                <input id="vote3" placodeholder="Адрес игрока" value="">
                 <button onclick="">Убить!</button>
             </div>
             <br>
