@@ -36,7 +36,7 @@ contract Kommisar {
         isSleeping = false;
     }
 
-    function getVotes() public returns (uint){
+    function getVotes() public view returns (uint){
         return votes;
     }
 
@@ -58,8 +58,8 @@ contract Kommisar {
       }
     }
 
-    function check(address addr, uint typeContr) returns (uint) {
-      if (typeContr == 5){
+    function check(address addr, uint typeContr) public view returns (uint) {
+      if (typeContr == 4){
         return 0;
       }
       return typeContr;
