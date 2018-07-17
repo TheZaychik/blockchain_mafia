@@ -45,45 +45,45 @@ contract GameSys {
     }
 
     function initPlayers() {
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < 10; i++) {
             if(roles[i] == 0){
-                if(citizen_count == 5){
+                if(citizen_count == 5) {
                     citizen1 = new Citizen(players[i]);
                     citizen_count -=1;
                 }
-                else if(citizen_count == 4){
+                else if(citizen_count == 4) {
                     citizen2 = new Citizen(players[i]);
                     citizen_count -=1;
                 }
-                else if(citizen_count == 3){
+                else if(citizen_count == 3) {
                     citizen3 = new Citizen(players[i]);
                     citizen_count -=1;
                 }
-                else if(citizen_count == 2){
+                else if(citizen_count == 2) {
                     citizen4 = new Citizen(players[i]);
                     citizen_count -=1;
                 }
-                else if(citizen_count == 1){
+                else if(citizen_count == 1) {
                     citizen5 = new Citizen(players[i]);
                     citizen_count -=1;
                 }
             }
-            if(roles[i] == 1){
+            if(roles[i] == 1) {
                 doctor1 = new Doctor(players[i]);
             }
-            if(roles[i] == 2){
+            if(roles[i] == 2) {
                 kommisar1 = new Kommisar(players[i]);
             }
-            if(roles[i] == 3){
-                if (mafia_count == 2){
+            if(roles[i] == 3) {
+                if (mafia_count == 2) {
                     mafia1 = new Mafia(players[i]);
                     mafia_count -=1;
                 }
-                else if(mafia_count == 1){
+                else if(mafia_count == 1) {
                     mafia2 = new Mafia(players[i]);
                 }
             }
-            if(roles[i] == 4){
+            if(roles[i] == 4) {
                 maniac1 = new Maniac(players[i]);
             }
         }
@@ -105,11 +105,11 @@ contract GameSys {
             mafia_count +=1;
             roles.push(3)
         }
-        else if(maniac_count == 0){
+        else if(maniac_count == 0) {
             maniac_count = 1;
             roles.push(4);
         }
-        else if(citizen_count < 5){
+        else if(citizen_count < 5) {
             citizen_count +=1;
             roles.push(0);
         }
