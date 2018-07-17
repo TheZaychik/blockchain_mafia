@@ -203,7 +203,7 @@
         "id": 146,
         "nodeType": "ImportDirective",
         "scope": 349,
-        "sourceUnit": 607,
+        "sourceUnit": 973,
         "src": "50:24:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -214,7 +214,7 @@
         "id": 147,
         "nodeType": "ImportDirective",
         "scope": 349,
-        "sourceUnit": 813,
+        "sourceUnit": 1179,
         "src": "75:21:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -225,7 +225,7 @@
         "id": 148,
         "nodeType": "ImportDirective",
         "scope": 349,
-        "sourceUnit": 1019,
+        "sourceUnit": 1385,
         "src": "97:22:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1367,10 +1367,10 @@
                                         "name": "Maniac",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 1018,
+                                        "referencedDeclaration": 1384,
                                         "src": "1050:6:1",
                                         "typeDescriptions": {
-                                          "typeIdentifier": "t_type$_t_contract$_Maniac_$1018_$",
+                                          "typeIdentifier": "t_type$_t_contract$_Maniac_$1384_$",
                                           "typeString": "type(contract Maniac)"
                                         }
                                       },
@@ -1384,7 +1384,7 @@
                                       "nodeType": "FunctionCall",
                                       "src": "1050:12:1",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_contract$_Maniac_$1018",
+                                        "typeIdentifier": "t_contract$_Maniac_$1384",
                                         "typeString": "contract Maniac"
                                       }
                                     },
@@ -1395,7 +1395,7 @@
                                     "lValueRequested": false,
                                     "memberName": "heal",
                                     "nodeType": "MemberAccess",
-                                    "referencedDeclaration": 859,
+                                    "referencedDeclaration": 1225,
                                     "src": "1050:17:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -1465,10 +1465,10 @@
                                       "name": "Mafia",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 812,
+                                      "referencedDeclaration": 1178,
                                       "src": "987:5:1",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_type$_t_contract$_Mafia_$812_$",
+                                        "typeIdentifier": "t_type$_t_contract$_Mafia_$1178_$",
                                         "typeString": "type(contract Mafia)"
                                       }
                                     },
@@ -1482,7 +1482,7 @@
                                     "nodeType": "FunctionCall",
                                     "src": "987:11:1",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_Mafia_$812",
+                                      "typeIdentifier": "t_contract$_Mafia_$1178",
                                       "typeString": "contract Mafia"
                                     }
                                   },
@@ -1493,7 +1493,7 @@
                                   "lValueRequested": false,
                                   "memberName": "heal",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 661,
+                                  "referencedDeclaration": 1027,
                                   "src": "987:16:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -1563,10 +1563,10 @@
                                     "name": "Kommisar",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 606,
+                                    "referencedDeclaration": 972,
                                     "src": "921:8:1",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_type$_t_contract$_Kommisar_$606_$",
+                                      "typeIdentifier": "t_type$_t_contract$_Kommisar_$972_$",
                                       "typeString": "type(contract Kommisar)"
                                     }
                                   },
@@ -1580,7 +1580,7 @@
                                   "nodeType": "FunctionCall",
                                   "src": "921:14:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_Kommisar_$606",
+                                    "typeIdentifier": "t_contract$_Kommisar_$972",
                                     "typeString": "contract Kommisar"
                                   }
                                 },
@@ -1591,7 +1591,7 @@
                                 "lValueRequested": false,
                                 "memberName": "heal",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 428,
+                                "referencedDeclaration": 794,
                                 "src": "921:19:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -2201,10 +2201,10 @@
                                         "name": "Maniac",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 1018,
+                                        "referencedDeclaration": 1384,
                                         "src": "1448:6:1",
                                         "typeDescriptions": {
-                                          "typeIdentifier": "t_type$_t_contract$_Maniac_$1018_$",
+                                          "typeIdentifier": "t_type$_t_contract$_Maniac_$1384_$",
                                           "typeString": "type(contract Maniac)"
                                         }
                                       },
@@ -2218,7 +2218,7 @@
                                       "nodeType": "FunctionCall",
                                       "src": "1448:12:1",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_contract$_Maniac_$1018",
+                                        "typeIdentifier": "t_contract$_Maniac_$1384",
                                         "typeString": "contract Maniac"
                                       }
                                     },
@@ -2229,7 +2229,7 @@
                                     "lValueRequested": false,
                                     "memberName": "addVote",
                                     "nodeType": "MemberAccess",
-                                    "referencedDeclaration": 867,
+                                    "referencedDeclaration": 1233,
                                     "src": "1448:20:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -2299,10 +2299,10 @@
                                       "name": "Mafia",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 812,
+                                      "referencedDeclaration": 1178,
                                       "src": "1374:5:1",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_type$_t_contract$_Mafia_$812_$",
+                                        "typeIdentifier": "t_type$_t_contract$_Mafia_$1178_$",
                                         "typeString": "type(contract Mafia)"
                                       }
                                     },
@@ -2316,7 +2316,7 @@
                                     "nodeType": "FunctionCall",
                                     "src": "1374:11:1",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_Mafia_$812",
+                                      "typeIdentifier": "t_contract$_Mafia_$1178",
                                       "typeString": "contract Mafia"
                                     }
                                   },
@@ -2327,7 +2327,7 @@
                                   "lValueRequested": false,
                                   "memberName": "addVote",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 645,
+                                  "referencedDeclaration": 1011,
                                   "src": "1374:19:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -2397,10 +2397,10 @@
                                     "name": "Kommisar",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 606,
+                                    "referencedDeclaration": 972,
                                     "src": "1305:8:1",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_type$_t_contract$_Kommisar_$606_$",
+                                      "typeIdentifier": "t_type$_t_contract$_Kommisar_$972_$",
                                       "typeString": "type(contract Kommisar)"
                                     }
                                   },
@@ -2414,7 +2414,7 @@
                                   "nodeType": "FunctionCall",
                                   "src": "1305:14:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_Kommisar_$606",
+                                    "typeIdentifier": "t_contract$_Kommisar_$972",
                                     "typeString": "contract Kommisar"
                                   }
                                 },
@@ -2425,7 +2425,7 @@
                                 "lValueRequested": false,
                                 "memberName": "addVote",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 436,
+                                "referencedDeclaration": 802,
                                 "src": "1305:22:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -2776,7 +2776,7 @@
         "id": 146,
         "nodeType": "ImportDirective",
         "scope": 349,
-        "sourceUnit": 607,
+        "sourceUnit": 973,
         "src": "50:24:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2787,7 +2787,7 @@
         "id": 147,
         "nodeType": "ImportDirective",
         "scope": 349,
-        "sourceUnit": 813,
+        "sourceUnit": 1179,
         "src": "75:21:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2798,7 +2798,7 @@
         "id": 148,
         "nodeType": "ImportDirective",
         "scope": 349,
-        "sourceUnit": 1019,
+        "sourceUnit": 1385,
         "src": "97:22:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -3940,10 +3940,10 @@
                                         "name": "Maniac",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 1018,
+                                        "referencedDeclaration": 1384,
                                         "src": "1050:6:1",
                                         "typeDescriptions": {
-                                          "typeIdentifier": "t_type$_t_contract$_Maniac_$1018_$",
+                                          "typeIdentifier": "t_type$_t_contract$_Maniac_$1384_$",
                                           "typeString": "type(contract Maniac)"
                                         }
                                       },
@@ -3957,7 +3957,7 @@
                                       "nodeType": "FunctionCall",
                                       "src": "1050:12:1",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_contract$_Maniac_$1018",
+                                        "typeIdentifier": "t_contract$_Maniac_$1384",
                                         "typeString": "contract Maniac"
                                       }
                                     },
@@ -3968,7 +3968,7 @@
                                     "lValueRequested": false,
                                     "memberName": "heal",
                                     "nodeType": "MemberAccess",
-                                    "referencedDeclaration": 859,
+                                    "referencedDeclaration": 1225,
                                     "src": "1050:17:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -4038,10 +4038,10 @@
                                       "name": "Mafia",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 812,
+                                      "referencedDeclaration": 1178,
                                       "src": "987:5:1",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_type$_t_contract$_Mafia_$812_$",
+                                        "typeIdentifier": "t_type$_t_contract$_Mafia_$1178_$",
                                         "typeString": "type(contract Mafia)"
                                       }
                                     },
@@ -4055,7 +4055,7 @@
                                     "nodeType": "FunctionCall",
                                     "src": "987:11:1",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_Mafia_$812",
+                                      "typeIdentifier": "t_contract$_Mafia_$1178",
                                       "typeString": "contract Mafia"
                                     }
                                   },
@@ -4066,7 +4066,7 @@
                                   "lValueRequested": false,
                                   "memberName": "heal",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 661,
+                                  "referencedDeclaration": 1027,
                                   "src": "987:16:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -4136,10 +4136,10 @@
                                     "name": "Kommisar",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 606,
+                                    "referencedDeclaration": 972,
                                     "src": "921:8:1",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_type$_t_contract$_Kommisar_$606_$",
+                                      "typeIdentifier": "t_type$_t_contract$_Kommisar_$972_$",
                                       "typeString": "type(contract Kommisar)"
                                     }
                                   },
@@ -4153,7 +4153,7 @@
                                   "nodeType": "FunctionCall",
                                   "src": "921:14:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_Kommisar_$606",
+                                    "typeIdentifier": "t_contract$_Kommisar_$972",
                                     "typeString": "contract Kommisar"
                                   }
                                 },
@@ -4164,7 +4164,7 @@
                                 "lValueRequested": false,
                                 "memberName": "heal",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 428,
+                                "referencedDeclaration": 794,
                                 "src": "921:19:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -4774,10 +4774,10 @@
                                         "name": "Maniac",
                                         "nodeType": "Identifier",
                                         "overloadedDeclarations": [],
-                                        "referencedDeclaration": 1018,
+                                        "referencedDeclaration": 1384,
                                         "src": "1448:6:1",
                                         "typeDescriptions": {
-                                          "typeIdentifier": "t_type$_t_contract$_Maniac_$1018_$",
+                                          "typeIdentifier": "t_type$_t_contract$_Maniac_$1384_$",
                                           "typeString": "type(contract Maniac)"
                                         }
                                       },
@@ -4791,7 +4791,7 @@
                                       "nodeType": "FunctionCall",
                                       "src": "1448:12:1",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_contract$_Maniac_$1018",
+                                        "typeIdentifier": "t_contract$_Maniac_$1384",
                                         "typeString": "contract Maniac"
                                       }
                                     },
@@ -4802,7 +4802,7 @@
                                     "lValueRequested": false,
                                     "memberName": "addVote",
                                     "nodeType": "MemberAccess",
-                                    "referencedDeclaration": 867,
+                                    "referencedDeclaration": 1233,
                                     "src": "1448:20:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -4872,10 +4872,10 @@
                                       "name": "Mafia",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 812,
+                                      "referencedDeclaration": 1178,
                                       "src": "1374:5:1",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_type$_t_contract$_Mafia_$812_$",
+                                        "typeIdentifier": "t_type$_t_contract$_Mafia_$1178_$",
                                         "typeString": "type(contract Mafia)"
                                       }
                                     },
@@ -4889,7 +4889,7 @@
                                     "nodeType": "FunctionCall",
                                     "src": "1374:11:1",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_Mafia_$812",
+                                      "typeIdentifier": "t_contract$_Mafia_$1178",
                                       "typeString": "contract Mafia"
                                     }
                                   },
@@ -4900,7 +4900,7 @@
                                   "lValueRequested": false,
                                   "memberName": "addVote",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 645,
+                                  "referencedDeclaration": 1011,
                                   "src": "1374:19:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -4970,10 +4970,10 @@
                                     "name": "Kommisar",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 606,
+                                    "referencedDeclaration": 972,
                                     "src": "1305:8:1",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_type$_t_contract$_Kommisar_$606_$",
+                                      "typeIdentifier": "t_type$_t_contract$_Kommisar_$972_$",
                                       "typeString": "type(contract Kommisar)"
                                     }
                                   },
@@ -4987,7 +4987,7 @@
                                   "nodeType": "FunctionCall",
                                   "src": "1305:14:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_Kommisar_$606",
+                                    "typeIdentifier": "t_contract$_Kommisar_$972",
                                     "typeString": "contract Kommisar"
                                   }
                                 },
@@ -4998,7 +4998,7 @@
                                 "lValueRequested": false,
                                 "memberName": "addVote",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 436,
+                                "referencedDeclaration": 802,
                                 "src": "1305:22:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
@@ -5327,8 +5327,20 @@
       "links": {},
       "address": "0xcff5cf89df51b35f50f793c4698dbadcafef4677",
       "transactionHash": "0xffda03b26c1b7a53cf09d70145110281d84848856b159ac7420cfcb3b729ed6d"
+    },
+    "1531817256799": {
+      "events": {},
+      "links": {},
+      "address": "0xbc1d21acff4ca29570e34db2dc1c69f7d1ab65cb",
+      "transactionHash": "0xaf869ce8954d742237738f559950aab8cbce1a50e47db4653686c19569f6ef54"
+    },
+    "1531817915760": {
+      "events": {},
+      "links": {},
+      "address": "0xba5fdac508ee990ae66e01375175962872d2eb5d",
+      "transactionHash": "0xffda03b26c1b7a53cf09d70145110281d84848856b159ac7420cfcb3b729ed6d"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-07-17T07:39:10.701Z"
+  "updatedAt": "2018-07-17T08:58:42.654Z"
 }
