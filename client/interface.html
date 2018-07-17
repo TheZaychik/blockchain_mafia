@@ -12,70 +12,81 @@
 <body>
     <center>
         <form>
-            <h1>Комната</h1>
             <p text-align="left">Время суток:</p>
             <p text-align="left">Ход: </p>
+            <p text-align="left">Действует: </p>
             <h3>Игроки:</h3>
             <div>
                <br>
                 <h4>Игрок 1: </h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока" value="">
+                    <p>Статус: </p>
                 <br>
                 <br>
                 <br>
                 <h4>Игрок 2:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока" value="">
+                    <p>Статус: </p>
                 <br>
                 <br>
                 <br>
                 <h4>Игрок 3:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока" value="">
+                    <p>Статус: </p>
                 <br>
                 <br>
                 <br>
                 <h4>Игрок 4:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока" value="">
+                    <p>Статус: </p>
                 <br>
                 <br>
                 <br>
                 <h4>Игрок 5:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока" value="">
+                    <p>Статус: </p>
                 <br>
                 <br>
                 <br>
                 <h4>Игрок 6:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока" value="">
+                    <p>Статус: </p>
                 <br>
                 <br>
                 <br>
                 <h4>Игрок 7:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока" value="">
+                    <p>Статус: </p>
                 <br>
                 <br>
                 <br>
                 <h4>Игрок 8:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока" value="">
+                    <p>Статус: </p>
                 <br>
                 <br>
                 <br>
                 <h4>Игрок 9:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока" value="">
+                    <p>Статус: </p>
                 <br>
                 <br>
                 <br>
                 <h4>Игрок 10:</h4>
-                    <p>Введите номер предполагаемой мафии.</p>
-                    <input placeholder="Номер игрока" value="">
+                    <p>Статус: </p>
                 <br>
+            </div>
+            <h3>Действия</h3>
+            <div>
+                <p>Проголосовать за: <p>
+                <input placodeholder="Адрес игрока" value="">
+                <button onclick="">Проголосовать!</button>
+            </div>
+            <div>
+                <p><i>[доступно только для врачей]</i> Вылечить: <p>
+                <input placodeholder="Адрес игрока" value="">
+                <button onclick="">Вылечить!</button>
+            </div>
+            <div>
+                <p><i>[доступно только для комисара, мафии и маньяка]</i> Убить: <p>
+                <input placodeholder="Адрес игрока" value="">
+                <button onclick="">Убить!</button>
+            </div>
+            <br>
+            <button onclick="nextTurn()">Ход</button>
+            <h3>События<h3>
+            <div>
             </div>
         </form>
     </center>
@@ -85,11 +96,7 @@
     <script src="js/popper.min.js"></script>
     <!-- Подключаем Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
-
-    <script>
-        function Vote(){
-            
-        }
-    </script>
+    <!-- Бэк-игра -->
+   <script src = "backend.js"></script>
 </body>
 </html>
