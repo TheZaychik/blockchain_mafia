@@ -24,17 +24,17 @@ contract('mafia', function(accounts) {
     await assert.equal(await doctor.isDead(), false);
   });
   it("Mafia, kommisar and maniac can kill someone", async function() {
-    mafia.kill(await citizen1.address, await citizen1.typeContract());
-    maniac.kill(await citizen2.address, await citizen2.typeContract())
-    kommisar.kill(await mafia.address, await mafia.typeContract());
+    await mafia.kill(await citizen1.address, await citizen1.typeContract());
+    await maniac.kill(await citizen2.address, await citizen2.typeContract())
+    await kommisar.kill(await mafia.address, await mafia.typeContract());
     await assert.equal(await mafia.isDead(), true);
     await assert.equal(await citizen2.isDead(), true);
     await assert.equal(await citizen1.isDead(), true);
   });
   it("Doctor can heal", async function() {
-    doctor.cure(await mafia.address, await mafia.typeContract());
-    doctor.cure(await citizen1.address, await citizen1.typeContract());
-    doctor.cure(await citizen2.address, await citizen1.typeContract());
+    await doctor.cure(await mafia.address, await mafia.typeContract());
+    await doctor.cure(await citizen1.address, await citizen1.typeContract());
+    await doctor.cure(await citizen2.address, await citizen1.typeContract());
     await assert.equal(await mafia.isDead(), false);
     await assert.equal(await citizen2.isDead(), false);
     await assert.equal(await citizen1.isDead(), false);
@@ -45,7 +45,7 @@ contract('mafia', function(accounts) {
     await assert.equal((await kommisar.check(await maniac.address, await maniac.typeContract())).toNumber(), 0);
   });
   it("We can vote", async function() {
-    citizen1.vote(await mafia.address, await mafia.typeContract());
+    await citizen1.vote(await mafia.address, await mafia.typeContract());
     await assert.equal((await mafia.getVotes()).toNumber(),1);
   });
   it("We can sleep and wake up", async function(){
